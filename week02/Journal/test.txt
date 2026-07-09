@@ -1,0 +1,12 @@
+[
+  {
+    "_date": "09/07/2026",
+    "_promptText": "Who was the most interesting person I interacted with today?",
+    "_entryText": "12"
+  },
+  {
+    "_date": "09/07/2026",
+    "_promptText": "What is the funniest thing you can think of today?",
+    "_entryText": "aaa"
+  }
+]
