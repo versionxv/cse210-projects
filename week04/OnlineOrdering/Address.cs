@@ -1,5 +1,7 @@
 using System;
 
+// Made by Miguel J. Subero Saballo
+
 public class Address
 {
     private string _street;
@@ -15,8 +17,24 @@ public class Address
         _country = country;
     }
 
-    public void USACheck()
+    public string GetAdress()
     {
-        aa
+        string text;
+
+        text = $"{_street}, {_city}, {_state}, {_country}";
+
+        return text;
+    }
+
+    public bool CheckPlace()
+    {
+
+        if (_country == "USA" || _country == "United States" || _country == "United States of America")
+        {
+            return true;
+        } else
+        {
+            return false;
+        }
     }
 }
