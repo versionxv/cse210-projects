@@ -8,10 +8,10 @@ public class Customer
     private string _name;
     private Address _address;
 
-    public Customer(string name, Address address)
+    public Customer(string name, Address Address)
     {
         _name = name;
-        _address = address;
+        _address = Address;
     }
 
     public string GetCustomer()

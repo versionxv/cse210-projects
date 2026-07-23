@@ -8,14 +8,14 @@ public class Order
     private Customer _customer;
     private List<Product> _products = new List<Product>();
 
-    public Order(Customer customer)
+    public Order(Customer Customer)
     {
-        _customer = customer;
+        _customer = Customer;
     }
 
-    public void AddProduct(Product product)
+    public void AddProduct(Product Product)
     {
-        _products.Add(product);
+        _products.Add(Product);
     }
 
     public void PrintPackingLabel()

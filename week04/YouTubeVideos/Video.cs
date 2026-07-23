@@ -17,9 +17,9 @@ public class Video
         _seconds = seconds;
     }
 
-    public void AddComment(Comment comment)
+    public void AddComment(Comment Comment)
     {
-        _comments.Add(comment);
+        _comments.Add(Comment);
     }
 
     public int GetCommentCount()
