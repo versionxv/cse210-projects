@@ -8,19 +8,19 @@ public class Activity
     protected string _description;
     protected int _duration;
 
-    public Activity(string title, string explanation, int time)
+    protected Activity(string title, string explanation, int time)
     {
         _name = title;
         _description = explanation;
         _duration = time;
     }
 
-    public void SetNewTime(int timer)
+    protected void SetNewTime(int timer)
     {
         _duration = timer;
     }
 
-    public void DisplayStartMessage()
+    protected void DisplayStartMessage()
     {
         Console.Clear();
         Console.WriteLine($"Welcome to the {_name} Activity.");
@@ -32,7 +32,7 @@ public class Activity
         return;
     }
 
-    public void DisplayEndMessage()
+    protected void DisplayEndMessage()
     {
         Console.WriteLine("\nCongratulations!");
         Console.WriteLine("");
@@ -41,7 +41,7 @@ public class Activity
         return;
     }
 
-    public void ShowSpinner(int seconds)
+    protected void ShowSpinner(int seconds)
     {
         List<string> spin = new List<string>() {"|", "/", "—", "\\"};
         int i = 0;
@@ -65,7 +65,7 @@ public class Activity
         }
     }
 
-    public void ShowCountDown(int seconds)
+    protected void ShowCountDown(int seconds)
     {
         for (int i = seconds; i > 0; i--)
         {
@@ -76,7 +76,7 @@ public class Activity
         Console.WriteLine("");
     }
 
-    public string GetRandom(List<string> someList)
+    protected string GetRandom(List<string> someList)
     {
         Random random = new Random();
         int randomIndex = random.Next(0, someList.Count);

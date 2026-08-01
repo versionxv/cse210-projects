@@ -14,7 +14,7 @@ public class ListingActivity : Activity
         
     }
 
-    public void GetList()
+    private void GetList()
     {
         List<string> userList = new List<string>();
 

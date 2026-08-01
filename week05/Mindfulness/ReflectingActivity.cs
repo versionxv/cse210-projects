@@ -13,7 +13,7 @@ public class ReflectingActivity : Activity
         
     }
 
-    public void DisplayQuestions()
+    private void DisplayQuestions()
     {
         DateTime start = DateTime.Now;
         DateTime end = start.AddSeconds(_duration);
