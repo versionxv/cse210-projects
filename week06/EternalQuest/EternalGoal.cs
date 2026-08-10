@@ -1,15 +1,17 @@
 using System;
 
+// Made by Miguel J. Subero Saballo
+
 public class EternalGoal : Goal
 {
-    EternalGoal(string name, string explanation, string score) : base(name, explanation, score)
+    public EternalGoal(string name, string explanation, string score) : base(name, explanation, score)
     {
 
     }
 
     public override void RecordEvent()
     {
-        return;
+        Console.WriteLine($"Congratulations! You have earned {_points} points!");
     }
 
     public override bool IsComplete()
@@ -19,6 +21,6 @@ public class EternalGoal : Goal
 
     public override string GetStringRepresentation()
     {
-        return "b";
+        return $"EternalGoal:{_shortName},{_description},{_points}";
     }
 }

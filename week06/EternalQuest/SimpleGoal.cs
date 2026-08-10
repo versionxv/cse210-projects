@@ -1,5 +1,7 @@
 using System;
 
+// Made by Miguel J. Subero Saballo
+
 public class SimpleGoal : Goal
 {
     private bool _isComplete;
@@ -11,16 +13,16 @@ public class SimpleGoal : Goal
 
     public override void RecordEvent()
     {
-        return;
+        _isComplete = true;
     }
 
     public override bool IsComplete()
     {
-        return false;
+        return _isComplete;
     }
 
     public override string GetStringRepresentation()
     {
-        return "b";
+        return $"SimpleGoal:{_shortName},{_description},{_points},{_isComplete}";
     }
 }

@@ -1,6 +1,8 @@
 using System;
 using System.Drawing;
 
+// Made by Miguel J. Subero Saballo
+
 public abstract class Goal
 {
     protected string _shortName;
@@ -21,8 +23,13 @@ public abstract class Goal
 
     public virtual string GetDetails()
     {
-        return "a";
+        return $"[{ (IsComplete() ? "X" : " ")}] {_shortName} ({_description})";
     }
 
     public abstract string GetStringRepresentation();
+
+    public virtual int GetPoints()
+    {
+        return int.Parse(_points);
+    }
 }
